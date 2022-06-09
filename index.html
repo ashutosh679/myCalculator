@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebc46c8cd2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="content">
+        <h1>MyCalculator</h1><br>
+        <p> A calculator is a device that performs arithmetic operations on numbers. The simplest calculators can do only addition, subtraction, multiplication, and division. Our calculator can handle factorial, trigonometric functions & Inverse trigonometric functions.<br><br>This is my weekend project for this week.This is My first HTML,CSS & JS with library project A Simple Calculator.I have made this website with respect to desktop screen size.It is not a responsive website but all functions works fine. Still many functions are yet to be added.<br>This calculator design is inspired  Xiaomi Calculator. The sliding function is done by using JavaScript well known library JQuery.
+        
+            
+    </div>
+    <div class="calculator">
+        <input id="history" type="text">
+        <input id="display" type="text" placeholder="0">
+        <div id="extra">
+            <button id="inverse" class="switch">2nd</button>
+            <button class="operator">!</button>
+            <input type="button" id ="sin1" value="Sin" onclick="sine()">
+            <input type="button" id = "trigos"value="SinI" onclick="sineInverse()">
+            <input type="button" id = "cos1"value="Cos" onclick="cosine()">
+            <input type="button" id = "trigose" value="CosI" onclick="cosineInverse()">
+            <input type="button" id ="tan1" value="Tan" onclick="tangent()">
+            <input type="button" id ="trigoes" value="TanI" onclick="tangentInverse()">
+        </div>
+        <div class="keyboard">
+            <button class="operator">AC</button>
+            <button class="operator">C</button>
+            <button class="operator">%</button>
+            <button class="operator">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operator">x</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operator">+</button>
+            <button id ='slideToggle'><i class="fas fa-exchange-alt" ></i></button>
+            <button>0</button>
+            <button>.</button>
+            <button id="operator" class="operator">=</button>
+        </div>
+    </div>
+    <div class="footer"><h5><i class="fa fa-heart" style="color: red;"></i> Made by ASHU</h5></div>
+
+</body>
+
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $('#slideToggle').click(function(){
+            $('#extra').slideToggle(800);
+        });
+    });
+</script>
+</html>
